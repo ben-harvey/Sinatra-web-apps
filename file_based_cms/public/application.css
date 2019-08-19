@@ -1,0 +1,24 @@
+* {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flash {
+  padding-left: 10px
+}
+
+.flash.success {
+  background-color: LawnGreen;
+}
+
+.flash.failure {
+  background-color: OrangeRed;
+}
+
+.header {
+  padding: 20px 0px 0px 30px;
+}
+

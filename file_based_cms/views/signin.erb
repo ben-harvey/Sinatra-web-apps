@@ -1,0 +1,21 @@
+<form action="/users/signin" method="post">
+  <div>
+    Username: <input type="text" name="username" placeholder="" value="<%= params[:username] %>">
+    <br>
+    Password: <input type="text" name="password" placeholder="" value="">
+    <br>
+    <input type="submit" value="Sign In"/>
+  </div>
+</form>
+
+<h3>Don't have an account? Register now!</h3>
+
+<form action="/users/signup" method="post">
+  <div>
+    Username: <input type="text" name="signup_username" placeholder="" value="<%= params[:signup_username] %>">
+    <br>
+    Password (6 character minimum): <input type="text" name="password" placeholder="" value="">
+    <br>
+    <input type="submit" value="Register"/>
+  </div>
+</form>

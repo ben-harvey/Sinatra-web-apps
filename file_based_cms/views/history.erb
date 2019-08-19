@@ -1,0 +1,10 @@
+<h3>History for <%= @file_name %></h3>
+  <% @file_history.each do |version| %>
+    <ul>
+      <li><%= version %></li>
+    </ul>
+    <form name="revert" method="post" action="/<%= @file_name %>/edit">
+      <textarea style="display: none" name="content" rows="30" cols="150"><%= version %></textarea>
+      <button type="submit">Revert to this version</button>
+    </form>
+  <% end %>

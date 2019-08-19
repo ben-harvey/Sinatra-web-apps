@@ -1,0 +1,15 @@
+<form action="/new" method="post">
+  <label>Create a new document (<%= @supported_file_extensions.join(', ') %>)</label>
+  <div>
+    <input type="text" name="file_name" placeholder="" value="<%= params[:name] || '' %>">
+    <input type="submit" value="Create"/>
+  </div>
+</form>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label>Upload an image (<%= @supported_image_extensions.join(', ') %>)</label>
+  <br>
+  <input type="file" accept="image/jpeg,image/gif,image/png" name="file">
+  <br>
+  <input type="submit" value="Upload">
+</form>
